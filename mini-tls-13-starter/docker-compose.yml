@@ -1,0 +1,87 @@
+version: '3.5'
+
+services:
+        
+  client:
+    image: thierrysans/pycryptodome
+    container_name: client
+    depends_on:
+          - "server1"
+          - "server2"
+          - "server3"
+          - "server4"
+          - "server5"
+    tty: true
+    volumes:
+        - ./client:/shared
+    command: bash -c "python3 /shared/client.py --download --from alice --to=bob@10.0.0.11:9999 --roots=/shared/roots --filename=flag.txt /shared/files/flag-server1.txt;
+                      python3 /shared/client.py --download --from alice --to=bob@10.0.0.12:9999 --roots=/shared/roots --filename=flag.txt /shared/files/flag-server2.txt;
+                      python3 /shared/client.py --download --from alice --to=bob@10.0.0.13:9999 --roots=/shared/roots --filename=flag.txt /shared/files/flag-server3.txt;
+                      python3 /shared/client.py --download --from alice --to=bob@10.0.0.14:9999 --roots=/shared/roots --filename=flag.txt /shared/files/flag-server4.txt;
+                      python3 /shared/client.py --download --from alice --to=bob@10.0.0.15:9999 --roots=/shared/roots --filename=flag.txt /shared/files/flag-server5.txt"
+    networks:
+      my-network:
+        ipv4_address: 10.0.0.2
+  
+  server1:  
+    image: thierrysans/mini-tls-13
+    container_name: server1
+    tty: true
+    volumes:
+       - ./server1:/shared
+    command: python3 dist/server.py --port=9999 --private=/shared/cert/server.key --cert=/shared/cert/server.cert /shared/files
+    networks:
+      my-network:
+        ipv4_address: 10.0.0.11
+        
+  server2:  
+    image: thierrysans/mini-tls-13
+    container_name: server2
+    tty: true
+    volumes:
+       - ./server2:/shared
+    command: python3 dist/server.py --port=9999 --private=/shared/cert/server.key --cert=/shared/cert/server.cert /shared/files
+    networks:
+      my-network:
+        ipv4_address: 10.0.0.12
+        
+  server3:  
+    image: thierrysans/mini-tls-13
+    container_name: server3
+    tty: true
+    volumes:
+       - ./server3:/shared
+    command: python3 dist/server.py --port=9999 --private=/shared/cert/server.key --cert=/shared/cert/server.cert /shared/files
+    networks:
+      my-network:
+        ipv4_address: 10.0.0.13
+
+  server4:  
+    image: thierrysans/mini-tls-13
+    container_name: server4
+    tty: true
+    volumes:
+       - ./server4:/shared
+    command: python3 dist/server.py --port=9999 --private=/shared/cert/server.key --cert=/shared/cert/server.cert /shared/files
+    networks:
+      my-network:
+        ipv4_address: 10.0.0.14
+        
+  server5:  
+    image: thierrysans/mini-tls-13
+    container_name: server5
+    tty: true
+    volumes:
+       - ./server5:/shared
+    command: python3 dist/server.py --port=9999 --private=/shared/cert/server.key --cert=/shared/cert/server.cert /shared/files
+    networks:
+      my-network:
+        ipv4_address: 10.0.0.15
+
+networks:
+  my-network:
+    name: my-network
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 10.0.0.0/24

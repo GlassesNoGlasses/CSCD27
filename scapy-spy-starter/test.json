@@ -1,0 +1,122 @@
+[
+    {
+        "src": "10.0.0.2",
+        "dst": "8.8.8.8",
+        "protocol": "DNS",
+        "servername": "security.stackexchange.com."
+    },
+    {
+        "src": "10.0.0.2",
+        "dst": "104.18.43.226",
+        "protocol": "HTTP",
+        "servername": "security.stackexchange.com"
+    },
+    {
+        "src": "10.0.0.2",
+        "dst": "8.8.8.8",
+        "protocol": "DNS",
+        "servername": "security.stackexchange.com."
+    },
+    {
+        "src": "10.0.0.2",
+        "dst": "8.8.8.8",
+        "protocol": "DNS",
+        "servername": "security.stackexchange.com."
+    },
+    {
+        "src": "10.0.0.2",
+        "dst": "8.8.8.8",
+        "protocol": "DNS",
+        "servername": "https-only.seclab.space."
+    },
+    {
+        "src": "10.0.0.2",
+        "dst": "8.8.8.8",
+        "protocol": "DNS",
+        "servername": "https-only.seclab.space."
+    },
+    {
+        "src": "10.0.0.2",
+        "dst": "8.8.8.8",
+        "protocol": "DNS",
+        "servername": "utsc.utoronto.ca."
+    },
+    {
+        "src": "10.0.0.2",
+        "dst": "8.8.8.8",
+        "protocol": "DNS",
+        "servername": "github.com."
+    },
+    {
+        "src": "10.0.0.2",
+        "dst": "8.8.8.8",
+        "protocol": "DNS",
+        "servername": "github.com."
+    },
+    {
+        "src": "10.0.0.2",
+        "dst": "8.8.8.8",
+        "protocol": "DNS",
+        "servername": "http-only.seclab.space."
+    },
+    {
+        "src": "10.0.0.2",
+        "dst": "142.1.97.172",
+        "protocol": "HTTP",
+        "servername": "http-only.seclab.space"
+    },
+    {
+        "src": "10.0.0.2",
+        "dst": "8.8.8.8",
+        "protocol": "DNS",
+        "servername": "stackoverflow.com."
+    },
+    {
+        "src": "10.0.0.2",
+        "dst": "8.8.8.8",
+        "protocol": "DNS",
+        "servername": "stackoverflow.com."
+    },
+    {
+        "src": "10.0.0.2",
+        "dst": "8.8.8.8",
+        "protocol": "DNS",
+        "servername": "seclab.space."
+    },
+    {
+        "src": "10.0.0.2",
+        "dst": "8.8.8.8",
+        "protocol": "DNS",
+        "servername": "cms-weblab.utsc.utoronto.ca."
+    },
+    {
+        "src": "10.0.0.2",
+        "dst": "8.8.8.8",
+        "protocol": "DNS",
+        "servername": "cms-weblab.utsc.utoronto.ca."
+    },
+    {
+        "src": "10.0.0.2",
+        "dst": "8.8.8.8",
+        "protocol": "DNS",
+        "servername": "scapy.net."
+    },
+    {
+        "src": "10.0.0.2",
+        "dst": "104.24.0.40",
+        "protocol": "HTTPS",
+        "servername": "scapy.net"
+    },
+    {
+        "src": "10.0.0.2",
+        "dst": "8.8.8.8",
+        "protocol": "DNS",
+        "servername": "security.stackexchange.com."
+    },
+    {
+        "src": "10.0.0.2",
+        "dst": "104.18.43.226",
+        "protocol": "HTTP",
+        "servername": "security.stackexchange.com"
+    }
+]

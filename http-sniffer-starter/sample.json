@@ -1,0 +1,35 @@
+[
+    {
+        "type": "request",
+        "host": "e-commerce.seclab.space",
+        "method": "GET",
+        "path": "/home?lang=en",
+        "query_args": {
+            "lang": "en"
+        }
+    },
+    {
+        "type": "response",
+        "status_code": "200",
+        "body": "Welcome to e-commerce. Please enter your username and password."
+    },
+    {
+        "type": "request",
+        "host": "e-commerce.seclab.space",
+        "method": "POST",
+        "path": "/login",
+        "body": "username=alice&password=4l1c3",
+        "form": {
+            "username": "alice",
+            "password": "4l1c3"
+        }
+    },
+    {
+        "type": "response",
+        "status_code": "200",
+        "cookies": {
+            "session-id": "eyJhbGciOiJIUzI1NiJ9.YWxpY2U.MHnFOEgp6Qm4GbdqyJfWeYdxnQqhZXw-kCEHw9AI--I"
+        },
+        "body": "user alice has been signed in"
+    }
+]

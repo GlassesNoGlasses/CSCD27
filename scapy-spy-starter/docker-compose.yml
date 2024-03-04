@@ -1,0 +1,31 @@
+version: '3'
+
+services:
+  alice:
+    image: thierrysans/alice:scapy-spy
+    container_name: alice
+    cap_add:
+      - NET_ADMIN
+      - SYS_ADMIN
+    networks:
+      channel:
+        ipv4_address: 10.0.0.2
+
+  mallory:
+      image: thierrysans/mallory:scapy-spy
+      container_name: mallory
+      tty: true
+      restart: always
+      cap_add:
+        - NET_ADMIN
+        - SYS_ADMIN
+      volumes:
+          - .:/shared
+      network_mode: service:alice
+
+networks:
+  channel:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 10.0.0.0/28
