@@ -1,0 +1,16 @@
+GET /home?lang=en HTTP/1.1
+host: sec-commerce.seclab.space
+Connection: keep-alive
+
+HTTP/1.0 200 OK
+Server: BaseHTTP/0.6 Python/3.6.9
+Date: Sat, 09 Mar 2024 18:40:55 GMT
+Server: nginx/1.25.3
+Date: Sat, 09 Mar 2024 18:40:55 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 65
+Connection: keep-alive
+X-Powered-By: Express
+ETag: W/"41-+b82qcqbzUikBOc2b3BLswmxeeY"
+Strict-Transport-Security: max-age=31536000
+
