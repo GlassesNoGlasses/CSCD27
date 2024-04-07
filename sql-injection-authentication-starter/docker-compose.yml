@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+  microblog:
+    image: thierrysans/microblog:latest
+    container_name: microblog
+    ports:
+      - "8080:80"
+    networks:
+      channel:
+        ipv4_address: 10.0.0.2
+        
+  mallory:
+      image: thierrysans/mallory:microblog
+      container_name: mallory
+      tty: true
+      restart: always
+      volumes:
+          - .:/shared
+      networks:
+        channel:
+          ipv4_address: 10.0.0.4
+
+networks:
+  channel:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 10.0.0.0/24

