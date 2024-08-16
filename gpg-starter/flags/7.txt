@@ -1,0 +1,18 @@
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+The flag is fIzYOwXZ2sTw
+-----BEGIN PGP SIGNATURE-----
+Version: OpenPGP.js v4.6.2
+Comment: https://openpgpjs.org
+
+wsBcBAEBCAAGBQJlryMxAAoJEOmiBKgzHVSftcEIAKMOXjl5wyLC/ESt+L3f
+B5yRzegOTSe06dYoCuTIbd4bdiOpuhC4rWQilfjkMuJjZSDjDTkb8LD6NBO4
+XTp8SCOCkwkmQmoptMFmvaWf7Qv2A8G71Ha0ZscxTUwDX1YSn/5tLkFalCh3
+MonZQXuoJ9l487khxWud7QeiksRV/Hkk8MJ92YbbsxrsWxrxJAfPkp3F99RY
+qCU+z/F1+KuefQjEQujmL6MJ9nvCdP3DtSCsVfvJr81lmuARz42W9QAqfQC2
+mABV4GpF3/p84ufXdNqrLpD+pvqSMM/vmh3vVSQ4KlUZnxABIihkUEgF2Gs0
+u8/Hne5a1EFm8PPicuS4JpA=
+=tsFe
+-----END PGP SIGNATURE-----

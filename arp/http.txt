@@ -1,0 +1,12 @@
+GET /?flag=mallory-is-on-the-local-network HTTP/1.1
+host: welcome.seclab.space
+Connection: keep-alive
+
+HTTP/1.0 200 OK
+Server: SimpleHTTP/0.6 Python/2.7.18
+Date: Thu, 29 Feb 2024 20:34:12 GMT
+Content-type: text/html
+Content-Length: 19
+Last-Modified: Thu, 29 Feb 2024 20:22:06 GMT
+
+Welcome to DarkLab
